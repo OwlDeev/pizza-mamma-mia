@@ -1,24 +1,39 @@
 .linkAppBar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-.iconMenuHome{
-    color: rgb(255, 166, 0);
+.iconMenuHome {
+  color: rgb(255, 166, 0);
 }
 
-.iconMenuCarrito{
-    color: aliceblue;
+.linkText {
+  text-decoration: none;
+}
+.iconMenuCarrito {
+  color: aliceblue;
 }
 
-.appBar{
-    background-color: rgb(255, 0, 0) !important;
-    color:rgb(255, 255, 255) !important
+.appBar {
+  background-color: rgb(255, 0, 0) !important;
+  color: rgb(255, 255, 255) !important;
 }
 
-.fontLink{
-    color: aliceblue !important;
+.fontLink {
+  color: aliceblue !important;
+}
+
+.active {
+  color: rgb(251, 255, 0) !important;
+  font-weight: 900 !important;
+  text-decoration: none;
+}
+
+.inactive {
+  color: rgb(255, 255, 255) !important;
+  font-weight: normal !important;
+  text-decoration: none;
 }

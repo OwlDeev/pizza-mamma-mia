@@ -25,6 +25,7 @@ export default function VirtualizedList({ pizzaList }) {
 
   return (
     <Box className="fullSize">
+      
       <FixedSizeList
         height={200}
         width={200}

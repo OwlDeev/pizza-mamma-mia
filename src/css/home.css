@@ -1,0 +1,87 @@
+.divPortada {
+  height: 300px;
+  width: 100%;
+  background-image: url("../imgs/imgPortada9.jpg");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divAviso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.637);
+  border-radius: 20px;
+  width: 80%;
+  height: 200px;
+  color: aliceblue !important;
+  box-shadow: 0em 0em 1em 1em rgba(255, 0, 0, 0.637);
+}
+
+.divAvisoColumnaLeft {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.divAvisoColumnaRight {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.titlePortada {
+  color: aliceblue !important;
+  font-size: 50px;
+  border-bottom: 1px solid  aliceblue ;
+  margin-bottom: 10px;
+}
+
+.subTitlePortada {
+  color: aliceblue !important;
+  font-size: 20px;
+}
+
+.imgMarioPortada {
+  width: 80%;
+  height: 80%;
+}
+
+.textoBorde {
+  -webkit-text-stroke: 2px rgb(255, 0, 0);
+  color: transparent; 
+}
+
+.divHome{
+  background-color: rgb(168, 168, 168);
+  width: 100%;
+  height: 100%;
+}
+
+/* square buttons */
+.rec.rec-arrow {
+  border-radius: 0;
+}
+/* round buttons on hover */
+.rec.rec-arrow:hover {
+  border-radius: 50%;
+}
+/* hide disabled buttons */
+.rec.rec-arrow:disabled {
+  visibility: hidden;
+}
+/* disable default outline on focused items */
+/* add custom outline on focused items */
+.rec-carousel-item:focus {
+  outline: none;
+  box-shadow: inset 0 0 1px 1px lightgrey;
+}
