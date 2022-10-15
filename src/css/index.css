@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: "SuperMario256";
+  src: local("SuperMario256"), url("./SuperMario256.ttf");
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.inputMargin {
+  margin-bottom: 20px;
+}
+
+@font-face {
+  font-family: "SuperMario256";
+  src: local("SuperMario256"), url("./SuperMario256.ttf");
+  font-weight: normal;
+}
