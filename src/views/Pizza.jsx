@@ -5,11 +5,34 @@ import { useContext, useEffect } from "react";
 import { Context } from "../Context";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Unstable_Grid2";
+import SimpleAccordion from "../components/SimpleAccordion";
 
 function Pizza() {
   const { id } = useParams();
   const { pizzas } = useContext(Context);
   var pizzaSelected = [];
+
+   function pizzaCharacter(idPizza){
+     switch (idPizza) {
+       case 'P006':
+        return require('../imgs/warioLogo.png')
+
+        case 'P005':
+        return require('../imgs/bowserLogo.png')
+     
+        case 'P004':
+         return require('../imgs/marioLogo.png')
+     
+         case 'P003':
+         return require('../imgs/luigiLogo.png')
+     
+         case 'P002':
+         return require('../imgs/toadLogo.png')
+     
+         case 'P001':
+         return require('../imgs/toaddetteLogo.png')
+     }
+   }
 
   function getAllPokemon() {
     for (const pizza of pizzas) {
@@ -25,7 +48,7 @@ function Pizza() {
   }
 
   return (
-    <Box sx={{ flexGrow: 1 }} className='boxMainPizza'>
+    <Box sx={{ flexGrow: 1 }} className="boxMainPizza">
       <Grid container>
         <Grid xs={6}>
           <div className="divImgPizza">
@@ -33,7 +56,21 @@ function Pizza() {
           </div>
         </Grid>
         <Grid xs={6}>
-          <div className="divMenuPizza">Menu de la pizza</div>
+          <div className="divMenuPizza">
+            <div className="textTitle">{pizzaSelected[0].name}</div>
+            <div className="textDecription">{pizzaSelected[0].desc}</div>
+            <div className="divAccordion">
+              <SimpleAccordion
+                ingredients={pizzaSelected[0].ingredients}
+              ></SimpleAccordion>
+            </div>
+          </div>
+        </Grid>
+        <Grid xs={12}>
+          <div className="divImgFooter">
+            {/* <image src={pizzaCharacter(pizzaSelected[0].id)}></image> */}
+            <img src={pizzaCharacter(id)} className='imgFooter'></img>
+          </div>
         </Grid>
       </Grid>
     </Box>

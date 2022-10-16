@@ -22,11 +22,58 @@
 .divMenuPizza{
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .boxMainPizza{
     margin-top: 40px;
-    margin-bottom: 40px;
+
     padding-left: 40px;
     padding-right: 40px;
+}
+
+.textTitle{
+    font-size: 50px;
+    border-bottom: 10px solid rgb(255, 25, 0);
+    margin-bottom: 20px;
+}
+
+.divider{
+    background-color: black;
+}
+
+.textDecription{
+    padding-top: 40px;
+    padding-left: 40px;
+    font-size: 20px;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+}
+
+.divAccordion{
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+.divImgFooter{
+    width: 100%;
+    height: 300px;
+    background-image: url('https://d23wybgr07mqxm.cloudfront.net/wp-content/uploads/2018/08/15171000/Games2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgFooter{
+    width: 350px;
+    height: 100%px;
 }
