@@ -11,10 +11,6 @@ import "swiper/css/virtual";
 
 export default () => {
   const { pizzas } = useContext(Context);
-  // Create array with 1000 slides
-  //   const slides = Array.from({ length: 1000 }).map(
-  //     (el, index) => `Slide ${index + 1}`
-  //   );
 
   return (
     <Swiper modules={[Virtual]} spaceBetween={20} slidesPerView={4} virtual>

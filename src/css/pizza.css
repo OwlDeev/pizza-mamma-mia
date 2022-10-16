@@ -1,0 +1,32 @@
+.divPizzaMain{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.divImgPizza{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+.imgPizza{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.divMenuPizza{
+    width: 100%;
+    height: 100%;
+}
+
+.boxMainPizza{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}

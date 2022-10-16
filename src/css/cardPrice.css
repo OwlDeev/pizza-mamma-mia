@@ -11,6 +11,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .buttonAction{
@@ -19,4 +20,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.iconInfo{
+    color: rgb(255, 255, 255);
 }

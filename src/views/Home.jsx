@@ -1,16 +1,11 @@
 import React from "react";
-import { useContext } from "react";
-import { Context } from "../Context";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Unstable_Grid2";
 import "../css/home.css";
-// import { Typography } from "@mui/material";
-import CardPrice from "../components/CardPrice";
 import GallerySlide from "../components/gallerySlide";
 
 function Home() {
   const logo = require("../imgs/logoMario.png");
-  const { pizzas } = useContext(Context);
 
   return (
     <Box sx={{ flexGrow: 1 }}>
