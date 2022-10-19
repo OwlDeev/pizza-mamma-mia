@@ -104,7 +104,7 @@ function Carrito() {
                 <div className="divPizzaDetail">
                   <div className="divImgDetail">
                     <img src={pizzaCarrito.img} className="imgCarrito"></img>
-                    <div>{pizzaCarrito.name}</div>
+                    <div className="divNameImgDetail">{pizzaCarrito.name}</div>
                   </div>
                   <div className="priceDetail">
                     <div id="totalPizza">
