@@ -13,13 +13,24 @@ import { Context } from "../Context";
 
 export default function CardPrice({ name, img, ingredients, price }) {
   const navigate = useNavigate();
-  const { pizzas } = useContext(Context);
+  const { pizzas, carrito, setCarrito } = useContext(Context);
+  
 
   function goToPizza(namePizza) {
     const urlName = namePizza.target.parentElement.parentElement.parentElement.children[1].firstChild.textContent
     for (const pizza of pizzas) {
       if (urlName === pizza.name) {
         navigate(`/pizza/${pizza.index}`);
+      }
+    }
+  }
+
+  function addCarrito(pizza) {
+    const urlName = pizza.target.parentElement.parentElement.parentElement.children[1].firstChild.textContent
+    for (const pizza of pizzas) {
+      if (urlName === pizza.name) {
+        var listCarrito = [pizza, ...carrito]
+        setCarrito(listCarrito);
       }
     }
   }
@@ -52,7 +63,11 @@ export default function CardPrice({ name, img, ingredients, price }) {
           </Button>
         </div>
         <div className="buttonAction">
-          <Button variant="contained" size="large" color="success">
+          <Button 
+          variant="contained" 
+          size="large" 
+          color="success"
+          onClick={(e) => addCarrito(e)}>
             Anadir <ShoppingCartIcon></ShoppingCartIcon>
           </Button>
         </div>

@@ -7,10 +7,21 @@ import { NavLink } from "react-router-dom";
 import "../css/appbar.css";
 import LocalPizzaIcon from "@mui/icons-material/LocalPizza";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-// import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
+import { useContext } from "react";
+import { Context } from "../Context";
+import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
 
 export default function Appbar() {
+  const { carrito } = useContext(Context);
   const setActiveClass = ({ isActive }) => (isActive ? "active" : "inactive");
+
+  function calcularTotal(){
+    var totalCarrito = 0;
+    for (const pizzasCarrito of carrito) {
+      totalCarrito = totalCarrito + pizzasCarrito.price;
+    }
+    return totalCarrito;
+  }
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -19,13 +30,14 @@ export default function Appbar() {
           <div className="linkAppBar">
             <LocalPizzaIcon className="iconMenuHome"></LocalPizzaIcon>
             <NavLink className={setActiveClass} to="/home">
-              <Typography variant="h4">Mario's Pizza</Typography>
+              <div className="titleNav">Mario's Pizza</div>
             </NavLink>
           </div>
           <div className="linkAppBar">
-            <ShoppingCartIcon className="iconMenuCarrito" />
             <NavLink className={setActiveClass} to="/carrito">
-              <Typography variant="h4">Carrito</Typography>
+              {carrito.length >= 1 ? <ShoppingCartCheckoutIcon className="iconMenuCarrito" /> :<ShoppingCartIcon className="iconMenuCarrito" />}
+              
+              <div className="titleCountCarrito">{' $ ' + calcularTotal()}</div>
             </NavLink>
           </div>
         </Toolbar>

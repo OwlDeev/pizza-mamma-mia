@@ -23,7 +23,8 @@ export const Provider = ({ children }) => {
 
   //UseState
   const [pizzas, setPizza] = useState([]);
-  const globalState = { pizzas, setPizza };
+  const [carrito, setCarrito] = useState([]);
+  const globalState = { pizzas, setPizza, carrito, setCarrito};
 
   return <Context.Provider value={globalState}>{children}</Context.Provider>;
 };
