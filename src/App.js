@@ -14,9 +14,10 @@ export default function App()  {
         <BrowserRouter>
           <Appbar></Appbar>
           <Routes>
-            <Route path="/" element={<Navigate replace to="/home" />} />
-            <Route path="/pizza-mamma-mia" element={<Home />} />u
+            <Route path="/" element={<Home/>}  />
+            <Route path="/pizza-mamma-mia" element={<Home />} />
             <Route path="/home" element={<Home />} />
+            <Route path="https://owldeev.github.io/pizza-mamma-mia/" element={<Home/>} />
             <Route path="/Carrito" element={<Carrito></Carrito>} />
             <Route path="/pizza/:id" element={<Pizza></Pizza>} />
           </Routes>

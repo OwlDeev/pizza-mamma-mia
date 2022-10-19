@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/pizza-mamma-mia/static/css/main.c24cd142.css",
+    "main.js": "/pizza-mamma-mia/static/js/main.70d3d174.js",
+    "static/media/logoMario.png": "/pizza-mamma-mia/static/media/logoMario.385276d01793316aa4ef.png",
+    "static/media/warioLogo.png": "/pizza-mamma-mia/static/media/warioLogo.19e810cc933aeea4af5b.png",
+    "static/media/toaddetteLogo.png": "/pizza-mamma-mia/static/media/toaddetteLogo.4e44e15dd9610cf87b2a.png",
+    "static/media/bowserLogo.png": "/pizza-mamma-mia/static/media/bowserLogo.c207952f914fff36026c.png",
+    "static/media/luigiLogo.png": "/pizza-mamma-mia/static/media/luigiLogo.2ede7daf54bc7585ac13.png",
+    "static/media/marioLogo.png": "/pizza-mamma-mia/static/media/marioLogo.9bf10cf7e9afaa180d3a.png",
+    "static/media/toadLogo.png": "/pizza-mamma-mia/static/media/toadLogo.ed162a5801580fde8364.png",
+    "static/media/imgPortada9.jpg": "/pizza-mamma-mia/static/media/imgPortada9.3e6d60a06a8f34b3a814.jpg",
+    "static/media/SuperMario256.ttf": "/pizza-mamma-mia/static/media/SuperMario256.727519250ea444b6c5ce.ttf",
+    "index.html": "/pizza-mamma-mia/index.html",
+    "main.c24cd142.css.map": "/pizza-mamma-mia/static/css/main.c24cd142.css.map",
+    "main.70d3d174.js.map": "/pizza-mamma-mia/static/js/main.70d3d174.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c24cd142.css",
+    "static/js/main.70d3d174.js"
+  ]
+}

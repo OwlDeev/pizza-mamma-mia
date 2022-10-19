@@ -8,7 +8,7 @@ export const Provider = ({ children }) => {
   useEffect(() => {
     // Make a request for a user with a given ID
     async function getUser() {
-      let url = 'http://' + window.location.host + "/pizzas.json";
+      let url = 'https://owldeev.github.io/pizza-mamma-mia/pizzas.json';
       let reqOptions = {
         url: url,
         method: "GET",
