@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pizza-mamma-mia/static/css/main.c24cd142.css",
-    "main.js": "/pizza-mamma-mia/static/js/main.aa4d6175.js",
+    "main.css": "/pizza-mamma-mia/static/css/main.462959f4.css",
+    "main.js": "/pizza-mamma-mia/static/js/main.d786ae16.js",
     "static/media/logoMario.png": "/pizza-mamma-mia/static/media/logoMario.385276d01793316aa4ef.png",
     "static/media/warioLogo.png": "/pizza-mamma-mia/static/media/warioLogo.19e810cc933aeea4af5b.png",
     "static/media/toaddetteLogo.png": "/pizza-mamma-mia/static/media/toaddetteLogo.4e44e15dd9610cf87b2a.png",
@@ -12,11 +12,11 @@
     "static/media/imgPortada9.jpg": "/pizza-mamma-mia/static/media/imgPortada9.3e6d60a06a8f34b3a814.jpg",
     "static/media/SuperMario256.ttf": "/pizza-mamma-mia/static/media/SuperMario256.727519250ea444b6c5ce.ttf",
     "index.html": "/pizza-mamma-mia/index.html",
-    "main.c24cd142.css.map": "/pizza-mamma-mia/static/css/main.c24cd142.css.map",
-    "main.aa4d6175.js.map": "/pizza-mamma-mia/static/js/main.aa4d6175.js.map"
+    "main.462959f4.css.map": "/pizza-mamma-mia/static/css/main.462959f4.css.map",
+    "main.d786ae16.js.map": "/pizza-mamma-mia/static/js/main.d786ae16.js.map"
   },
   "entrypoints": [
-    "static/css/main.c24cd142.css",
-    "static/js/main.aa4d6175.js"
+    "static/css/main.462959f4.css",
+    "static/js/main.d786ae16.js"
   ]
 }
